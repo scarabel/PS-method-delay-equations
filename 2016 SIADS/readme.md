@@ -16,17 +16,15 @@ and on Matlab 2017a and Matcont version matcont6p6.
 It contains the definition of the right-hand side of the PseudoSpectral discretization of the system under study.
 To perform the Matcont continuation, the system definition file "PS_example" must be copied into the subfolder "systems" of the Matcont folder.
 
-`
-   function dydt = fun_eval(time,state,p1,...,aux,tau,M) 
-   
-   OUTPUT: evaluation of the rhs of the approximating ODE system
-   INPUT: (notation as in Breda et al., SIADS 2016)
-   state=(UM,yM,VM) vector of variables, dimension M*d1+(M+1)*d2
-   M: discretization index
-   aux: auxiliary parameter (e.g. for BP continuation)
-   p1,...: model parameters (specific of the model)
-   Notice that: model parameters MUST be listed separately
-`
+    function dydt = fun_eval(time,state,p1,...,aux,tau,M)`
+    
+    OUTPUT: evaluation of the rhs of the approximating ODE system
+    INPUT: (notation as in Breda et al., SIADS 2016)
+    state=(UM,yM,VM) vector of variables, dimension M*d1+(M+1)*d2
+    M: discretization index
+    aux: auxiliary parameter (e.g. for BP continuation)
+    p1,...: model parameters (specific of the model) 
+    Notice that: model parameters MUST be listed separately
    
    The user should modify only the section
 `   PHASE 1: SYSTEM DEFINITION *** to be completed by the user *** `
