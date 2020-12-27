@@ -1,8 +1,8 @@
-READ ME
+# 2016 EJQTDE
 
-This repository contains some codes that are useful to reproduce the results in the paper
+This folder contains some codes that are useful to reproduce the results in the paper
 
-[EJQTDE2016] Breda D., Diekmann O., Liessi D., Scarabel F. (2016). Numerical bifurcation analysis of a class of nonlinear renewal equations, Electronic Journal of Qualitative Theory of Differential Equations, 65, 1–24.
+[EJQTDE2016] Breda D, Diekmann O, Liessi D, Scarabel F (2016). Numerical bifurcation analysis of a class of nonlinear renewal equations, Electronic Journal of Qualitative Theory of Differential Equations, 65, 1–24.
 
 Each example consists of two files:
 PS_example: matlab function containing the definition of the right-hand side of the ODE system obtained through pseudospectral discretization, in the format suitable for the Matcont continuation.
