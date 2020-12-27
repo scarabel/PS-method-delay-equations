@@ -14,9 +14,9 @@ and on Matlab 2017a and Matcont version matcont6p6.
 ## Instruction for the PS_example file
 "PS_example" is the system definition file required by Matcont. 
 It contains the definition of the right-hand side of the PseudoSpectral discretization of the system under study.
-To perform the Matcont continuation, the system definition file ``PS_example'' must be copied into the subfolder "systems" of the Matcont folder.
+To perform the Matcont continuation, the system definition file "PS_example" must be copied into the subfolder "systems" of the Matcont folder.
 
-
+`
    function dydt = fun_eval(time,state,p1,...,aux,tau,M) 
    
    OUTPUT: evaluation of the rhs of the approximating ODE system
@@ -26,6 +26,7 @@ To perform the Matcont continuation, the system definition file ``PS_example'' m
    aux: auxiliary parameter (e.g. for BP continuation)
    p1,...: model parameters (specific of the model)
    Notice that: model parameters MUST be listed separately
+`
    
    The user should modify only the section
 `   PHASE 1: SYSTEM DEFINITION *** to be completed by the user *** `
