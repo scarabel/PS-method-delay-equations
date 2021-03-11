@@ -5,16 +5,15 @@ This folder contains some codes that are useful to reproduce the results in the 
 [EJQTDE2016] Breda D, Diekmann O, Liessi D, Scarabel F (2016). Numerical bifurcation analysis of a class of nonlinear renewal equations, Electronic Journal of Qualitative Theory of Differential Equations, 65, 1–24. https://doi.org/10.14232/ejqtde.2016.1.65 
 
 Each example consists of two files:
-PS_example: matlab function containing the definition of the right-hand side of the ODE system obtained through pseudospectral discretization, in the format suitable for the Matcont continuation.
-MC_example: script for the Matcont continuation of the system defined in "PS_example".
+PS_example: MATLAB function containing the definition of the right-hand side of the ODE system obtained through pseudospectral discretization, in the format suitable for the MatCont continuation.
+MC_example: script for the MatCont continuation of the system defined in "PS_example".
 
 The codes are tested on MATLAB 2014a and MatCont version cl_matcont5p4, 
 and on MATLAB 2017a and MatCont version matcont6p6.
 
 ## Instruction for the PS_example file
-"PS_example" is the system definition file required by Matcont. 
+"PS_example" is the system definition file required by MatCont. 
 It contains the definition of the right-hand side of the PseudoSpectral discretization of the system under study.
-To perform the Matcont continuation, the system definition file "PS_example" must be copied into the subfolder "systems" of the Matcont folder.
 
     function dydt = fun_eval(time,state,p1,...,aux,tau,M) 
     
@@ -45,5 +44,5 @@ However, this is not necessary.
 
 
 ## Instructions for the MC_example file
-"MC_example" is the script containing the instruction for the Matcont continuation.
+"MC_example" is the script containing the instruction for the MatCont continuation.
 Continuation and parameter options may be varied in the script.
