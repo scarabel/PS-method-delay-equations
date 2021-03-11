@@ -1,4 +1,4 @@
-% Copyright (c) 2020 Francesca Scarabel
+% Copyright (c) 2021 Francesca Scarabel
 % This code is distributed under the MIT license, see LICENSE.txt for 
 % licensing information. 
 % 
@@ -7,17 +7,15 @@
 % equations via pseudospectral approximation, available at 
 % https://arxiv.org/abs/2012.05364
   
-%% MC_specialRE_NBV.m
+%% MC_example23.m
 % command line instructions for MatCont continuation of the system defined
-% in PS_specialRE_NBV.m
+% in PS_example23.m
 
 clear;
 clearvars -global cds
 
 % Discretization parameters
 M=20;
-
-%%
     
 % Initial parameter values
 tau_max=3;
