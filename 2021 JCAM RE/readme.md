@@ -1,4 +1,4 @@
-# 2021 Renewal submitted
+# 2021 JCAM RE
 
 This folder contains some codes that are useful to reproduce the results in the paper
 Scarabel, Diekmann, Vermiglio, Numerical bifurcation analysis of renewal equations via pseudospectral approximation, available at: https://arxiv.org/abs/2012.05364
